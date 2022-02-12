@@ -1,0 +1,11 @@
+Найдите наибольший общий делитель чисел a и b. (Подсказка: вам поможет алгоритм Евклида и цикл while).
+function testCycle(a, b) {
+    var x=0;
+    while(a!=0 && b!=0){
+        if(a>=b){
+    x=b;a=a-b;
+    } else {
+        x=a;b=b-a;}
+    }
+    return x;
+}
